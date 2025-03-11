@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.clear-element{
+    clear: both;
+}
+
+body{
+    
+}
+
+ul li{
+    list-style-type: none;
+}
+
+nav ul li a.active{
+    font-weight: 700;
+}
+
+/* ***************** HEADER ****************** */
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #080a07;
+    width: 100%;
+}
+
+.row{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo{
+    float: left;
+    width: 25%;
+}
+.top-nav{
+    float: right;
+    width: 75%;
+    padding-top: 30px;
+}
+nav ul li{
+    float: left;
+    margin-left: 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+
+/* ***************** banner ****************** */
+
+
+.hero{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    height: 400px;
+    padding-top: 100px;
+}
+.hero-banner{
+    padding-left: 50px;
+    max-width: 700px;
+    margin: 0 auto; 
+    padding-right: 15px;
+}
+.hero-banner h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.hero-banner h3{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/* ***************** boxes ****************** */
+
+.sig-dish{
+    text-align: center;
+    padding-top: 50px;
+    background-color: #DC8D62;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.sig-dish h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.boxes{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boxes img{
+    height: 150px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.boxes a{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.boxes p{
+    padding: 0 20px;
+}
+
+
+/* ***************** we offer ****************** */
+
+.we-offer{
+    
+}
+
+.we-offer h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.we-offer p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.catering .picture{
+    float: left;
+}
+
+.catering .offer-description{
+    float: right;
+}
+
+.events .picture{
+    float: right;
+}
+
+.events .offer-description{
+    float: left;
+}
+
+.seasonal .picture{
+    float: left;
+}
+
+.seasonal .offer-description{
+    float: right;
+}
+
+.we-offer .picture{
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.we-offer .offer-description{
+    width: 40%;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.offer-description a{
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.offer-description p{
+    font-size: 22px;
+}
+
+
+/* ***************** footer ****************** */
+
+
+footer{
+    background-color: #080a07;
+    color: #ffffff;
+    text-align: center;
+}
+
+.col-1 p{
+    margin-bottom: 30px;
+}
+
+.col-1 a{
+    font-size: 12px;
+}
+
+footer img{
+    border-radius: 50%;
+}
+
+footer .footer-column{
+    float: left;
+    width: 33.3%;
+    padding: 20px 30px;
+}
+
+.footer-column a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social ul li{
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.footer-logo{
+    border-radius: 0;
+}
+
+
+/* ***************** menu ****************** */
+
+.menu-banner{
+    background-image: url(../img/steak-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    height: 300px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.menu-banner h1{
+    text-align: left;
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.menu .left{
+    float: left;
+}
+
+.menu .right{
+    float: right;
+}
+
+.menu-row{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu h4{
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+.menu ul{
+    margin-top: 30px;
+}
+
+.menu ul li{
+    list-style-type: decimal;
+    font-size: 20px;
+}
+
+
+/* ***************** about us ****************** */
+
+
+.about-banner{
+    background-image: url(../img/about-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    height: 300px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about-banner h1{
+    text-align: right;
+    color: #ffffff;
+    margin-right: 100px;
+}
+
+.about-body{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-body h2{
+    font-size: 30px;
+}
+
+.about-body p{
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.chef-img{
+    float: left;
+    width: 50%;
+}
+
+.about-description{
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.about-description p{
+    text-align: left;
+    margin: 0;
+}
+
+
+/* ***************** gallery ****************** */
+
+
+.gallery{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery h2{
+    font-size: 30px;
+}
+
+.gallery p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* ***************** contact ****************** */
+
+
+.contact-banner{
+    background-image: url(../img/steak-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    height: 300px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-banner h1{
+    text-align: left;
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.message{
+    text-align: center;
+}
+
+.message h2{
+    font-size: 30px;
+}
+
+.message p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+form.contact-form{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form.contact-form .left-form{
+    float: left;
+    width: 49%;
+}
+
+form.contact-form .right-form{
+    float: right;
+    width: 49%;
+}
+
+form.contact-form input[type=text], select{
+    width: 100%;
+    height: 65px;
+    margin-bottom: 15px;
+    border: 2px solid #F6E2D8;
+    background-color: #F6E2D8;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+form.contact-form textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 2px solid #F6E2D8;
+    background-color: #F6E2D8;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+form.contact-form button{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    background-color: #DC8D62;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+form.contact-form button a{
+    font-size: 18px;
+    display: inline-block;
+    color: #000000;
+}
+
+.open-time{
+    text-align: center;
+    padding: 30px 0;
+    background-color: #DC8D62;
+}
+
+.open-time h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.open-time p{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.open-time a{
+    display: block;
+    font-size: 18px;
+}
+
+
+
+
+/* ***************** responsive ****************** */
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .we-offer .offer-description{
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .we-offer .picture{
+        width: 100%;
+    }
+    .seasonal .picture{
+        float: none;
+    }
+    
+    .we-offer .offer-description{
+        width: 100%;
+    }
+    
+    .seasonal .offer-description{
+        float: none
+    }
+    
+    
+    
+    .menu .left{
+        float: none;
+    }
+    
+    .menu .right{
+        float: none;
+    }
+    
+    .menu ul{
+        padding-left: 15px;
+        padding-left: 15px;
+    }
+    
+    .menu ul{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .boxes{
+        float: none;
+        width: 100%;
+    }
+    
+    footer .footer-column{
+        float: none;
+        width: 100%;
+    }
+    
+    .chef-img {
+        float: none;
+        width: 100%;
+    }
+    .about-description{
+        float: none;
+        width: 100%;
+    }
+    
+    form.contact-form .left-form {
+        float: none;
+        width: 100%;
+    }
+    
+    form.contact-form .right-form{
+        float: none;
+        width: 100%;
+    }
+    
+    form.contact-form button{
+        width: 50%;
+    }
+    
+    .map iframe{
+        height: 300px;
+    }
+}
