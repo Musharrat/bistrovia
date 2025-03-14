@@ -31,6 +31,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.topnav{
+    display: none;
+}
+
 header{
     background-color: #080a07;
     width: 100%;
@@ -61,6 +65,41 @@ nav ul li a{
     color: #ffffff;
     font-size: 22px;
 }
+
+
+
+
+
+
+.topnav {
+  //overflow: hidden;
+  background-color: #080a07;
+  //position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
 
 
 /* ***************** banner ****************** */
@@ -204,6 +243,10 @@ footer{
     text-align: center;
 }
 
+.footer-column a span{
+    margin-right: 10px;
+}
+
 .col-1 p{
     margin-bottom: 30px;
 }
@@ -216,6 +259,10 @@ footer img{
     border-radius: 50%;
 }
 
+footer .social{
+    margin-top: 30px;
+}
+
 footer .footer-column{
     float: left;
     width: 33.3%;
@@ -226,6 +273,7 @@ footer .footer-column{
     display: block;
     text-decoration: none;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .social ul li{
@@ -236,6 +284,15 @@ footer .footer-column{
 
 .footer-logo{
     border-radius: 0;
+}
+
+.footer-column.col-3 ul li{
+    margin: 10px 0;
+}
+
+.footer-column.col-3 h5{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -484,6 +541,35 @@ form.contact-form button a{
 }
 
 @media only screen and (max-width: 768px){
+    
+    .topnav{
+        display: block;
+        padding-top: 50px;
+    }
+    
+    .top-nav{
+        display: none;
+    }
+    
+    .logo img{
+        max-width: 70%;
+    }
+    
+    .hero{
+        height: 250px;
+        padding-top: 30px;
+    }
+    
+    .hero-banner{
+        padding-left: 15px;
+    }
+    
+    .hero-banner h1{
+        font-size: 30px;
+    }
+    
+    
+    
     .we-offer .picture{
         width: 100%;
     }
@@ -499,7 +585,14 @@ form.contact-form button a{
         float: none
     }
     
+    .menu-banner{
+        height: 250px;
+    }
     
+    .menu-banner h1{
+        font-size: 30px;
+        margin-left: 0;
+    }
     
     .menu .left{
         float: none;
@@ -517,15 +610,33 @@ form.contact-form button a{
     .menu ul{
         margin-bottom: 15px;
     }
+    
+    .about-banner{
+        height: 250px;
+    }
+    
+    .about-banner h1{
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    
+    .contact-banner{
+        height: 250px;
+    }
+    
+    .contact-banner h1{
+        font-size: 30px;
+        margin-left: 0;
+    }
+    
+    footer .footer-column{
+        float: none;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 580px){
     .boxes{
-        float: none;
-        width: 100%;
-    }
-    
-    footer .footer-column{
         float: none;
         width: 100%;
     }

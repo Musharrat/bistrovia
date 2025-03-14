@@ -8,6 +8,7 @@
         <!-- RESOURCES FILES-->
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
@@ -28,8 +29,31 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="topnav">
+                    <div id="myLinks" class="ham-menu">
+                        
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
                 <div class="clear-element"></div>
             </div>
+            
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
         </header>
         
         <div class="gallery">
