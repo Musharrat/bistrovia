@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="resources/js/script.js"></script>
     </head>
     
     <body>
@@ -18,6 +19,9 @@
                     <a href="index.html">
                         <img src="resources/img/logo.png"></a>
                 </div>
+                <div class="icon-cart">
+                    <a href="cart.html"><img src="resources/img/cart.png"><span id="cart-count">0</span></a>
+                </div>
                 <div class="top-nav">
                     <nav>
                         <ul>
@@ -26,8 +30,10 @@
                             <li><a href="about.html">About us</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <div class="clear-element"></div>
                         </ul>
                     </nav>
+                    
                 </div>
                 <div class="topnav">
                     <div id="myLinks" class="ham-menu">
@@ -69,11 +75,11 @@
                     <img class="left" src="resources/img/burger.jpg">
                     <div class="burger-list right">
                         <ul>
-                            <li>The Boss Burger</li>
-                            <li>The Smoky Mountain</li>
-                            <li>Cheese Melt Dream</li>
-                            <li>BBQ Bliss</li>
-                            <li>Mushroom Mania</li>
+                            <li>The Boss Burger<a>$<span>5.00</span><button onclick="addToCart('The Boss Burger', 5)">Add</button></a></li>
+                            <li>The Smoky Mountain<a>$<span>5.00</span><button onclick="addToCart('The Smoky Mountain', 5)">Add</button></a></li>
+                            <li>Cheese Melt Dream<a>$<span>5.00</span><button onclick="addToCart('Cheese Melt Dream', 5)">Add</button></a></li>
+                            <li>BBQ Bliss<a>$<span>5.00</span><button onclick="addToCart('BBQ Bliss', 5)">Add</button></a></li>
+                            <li>Mushroom Mania<a>$<span>5.00</span><button onclick="addToCart('Mushroom Mania', 5)">Add</button></a></li>
                         </ul>
                     </div>
                     <div class="clear-element"></div>
@@ -86,11 +92,11 @@
                     <img class="right" src="resources/img/steak-menu.jpg">
                     <div class="steak-list left">
                         <ul>
-                            <li>The Sizzling Sirloin</li>
-                            <li>The Ribeye Royale</li>
-                            <li>The Flame-Grilled T-Bone</li>
-                            <li>Grill King’s Cut</li>
-                            <li>The Wagyu Wonder</li>
+                            <li>The Sizzling Sirloin<a>$<span>5.00</span><button onclick="addToCart('The Sizzling Sirloin', 5)">Add</button></a></li>
+                            <li>The Ribeye Royale<a>$<span>5.00</span><button onclick="addToCart('The Ribeye Royale', 5)">Add</button></a></li>
+                            <li>The Flame-Grilled T-Bone<a>$<span>5.00</span><button onclick="addToCart('The Flame-Grilled T-Bone', 5)">Add</button></a></li>
+                            <li>Grill King’s Cut<a>$<span>5.00</span><button onclick="addToCart('Grill King’s Cut', 5)">Add</button></a></li>
+                            <li>The Wagyu Wonder<a>$<span>5.00</span><button onclick="addToCart('The Wagyu Wonder', 5)">Add</button></a></li>
                         </ul>
                     </div>
                     <div class="clear-element"></div>
@@ -104,11 +110,11 @@
                     <img class="left" src="resources/img/shrimp.jpg">
                     <div class="seafood-list right">
                         <ul>
-                            <li>The Shrimp Scampi Supreme</li>
-                            <li>The Lobster Lover</li>
-                            <li>The Surf & Turf Supreme</li>
-                            <li>Salmon Nirvana</li>
-                            <li>King Crab Carnival</li>
+                            <li>The Shrimp Scampi Supreme<a>$<span>5.00</span><button onclick="addToCart('The Shrimp Scampi Supreme', 5)">Add</button></a></li>
+                            <li>The Lobster Lover<a>$<span>5.00</span><button onclick="addToCart('The Lobster Lover', 5)">Add</button></a></li>
+                            <li>The Surf & Turf Supreme<a>$<span>5.00</span><button onclick="addToCart('The Surf & Turf Supreme', 5)">Add</button></a></li>
+                            <li>Salmon Nirvana<a>$<span>5.00</span><button onclick="addToCart('Salmon Nirvana', 5)">Add</button></a></li>
+                            <li>King Crab Carnival<a>$<span>5.00</span><button onclick="addToCart('King Crab Carnival', 5)">Add</button></a></li>
                         </ul>
                     </div>
                     <div class="clear-element"></div>
@@ -122,11 +128,11 @@
                     <img class="right" src="resources/img/chicken-menu.jpg">
                     <div class="chicken-list left">
                         <ul>
-                            <li>The Spicy Chicken Fiesta</li>
-                            <li>Crispy Chicken Supreme</li>
-                            <li>Chicken Parmesan Perfection</li>
-                            <li>Lemon Herb Roast</li>
-                            <li>The Smoky Rooster</li>
+                            <li>The Spicy Chicken Fiesta<a>$<span>5.00</span><button onclick="addToCart('The Spicy Chicken Fiesta', 5)">Add</button></a></li>
+                            <li>Crispy Chicken Supreme<a>$<span>5.00</span><button onclick="addToCart('Crispy Chicken Supreme', 5)">Add</button></a></li>
+                            <li>Chicken Parmesan Perfection<a>$<span>5.00</span><button onclick="addToCart('Chicken Parmesan Perfection', 5)">Add</button></a></li>
+                            <li>Lemon Herb Roast<a>$<span>5.00</span><button onclick="addToCart('Lemon Herb Roast', 5)">Add</button></a></li>
+                            <li>The Smoky Rooster<a>$<span>5.00</span><button onclick="addToCart('The Smoky Rooster', 5)">Add</button></a></li>
                         </ul>
                     </div>
                     <div class="clear-element"></div>
@@ -165,5 +171,9 @@
                 <div class="clear-element"></div>
             </div>
         </footer>
+        <script>
+            // Load and display cart when the page loads
+            updateCartDisplay();  // This ensures the cart is populated on load
+        </script>
     </body>
 </html>

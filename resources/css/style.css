@@ -52,9 +52,32 @@ header{
     width: 25%;
 }
 .top-nav{
-    float: right;
-    width: 75%;
+    float: left;
+    width: 69%;
     padding-top: 30px;
+}
+
+.top-nav nav{
+    //float: left;
+}
+
+.top-nav div.cart{
+    //float: right;
+}
+
+.icon-cart{
+    float: right;
+    padding-top: 30px;
+    position: relative;
+}
+
+.icon-cart span{
+    background-color: white;
+    padding: 1px 5px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
 }
 nav ul li{
     float: left;
@@ -325,7 +348,7 @@ footer .footer-column{
 }
 
 .menu-row{
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -337,6 +360,10 @@ footer .footer-column{
     margin: 15px 0 30px 0;
 }
 
+.menu hr{
+    border: 1px solid #DC8000;
+}
+
 .menu ul{
     margin-top: 30px;
 }
@@ -344,8 +371,27 @@ footer .footer-column{
 .menu ul li{
     list-style-type: decimal;
     font-size: 20px;
+    margin: 15px 0;
+    box-shadow: 0px 3px 5px 0px #EEEEEE;
+    padding: 15px 0;
 }
 
+.menu ul li a{
+    float: right;
+    margin-left: 20px;
+}
+
+.menu ul li button{
+    margin-left: 5px;
+    background-color: #DC8D62;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu ul li button:hover{
+    background-color: #DC8000;
+}
 
 /* ***************** about us ****************** */
 
@@ -527,6 +573,35 @@ form.contact-form button a{
 }
 
 
+/* ***************** cart ****************** */
+
+.cart-page ul li{
+    padding: 20px;
+    box-shadow: 0px 3px 5px 0px #EEEEEE;
+    margin: 15px 0;
+    color: #DC8000;
+}
+
+.cart-page ul li:last-child{
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.cart-page ul li button{
+    margin-left: 5px;
+    background-color: #DC8000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#empty-cart-btn{
+    margin-left: 5px;
+    background-color: #DC8000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
 
 
 /* ***************** responsive ****************** */
@@ -549,6 +624,11 @@ form.contact-form button a{
     
     .top-nav{
         display: none;
+    }
+    
+    .icon-cart {
+        padding-top: 15px;
+        margin-right: 47px;
     }
     
     .logo img{

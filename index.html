@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="resources/js/script.js"></script>
     </head>
     
     <body>
@@ -19,6 +20,9 @@
                     <a href="index.html">
                         <img src="resources/img/logo.png"></a>
                 </div>
+                <div class="icon-cart">
+                    <a href="cart.html"><img src="resources/img/cart.png"><span id="cart-count">0</span></a>
+                </div>
                 <div class="top-nav">
                     <nav>
                         <ul>
@@ -27,8 +31,10 @@
                             <li><a href="about.html">About us</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <div class="clear-element"></div>
                         </ul>
                     </nav>
+                    
                 </div>
                 <div class="topnav">
                     <div id="myLinks" class="ham-menu">
@@ -160,5 +166,9 @@
                 <div class="clear-element"></div>
             </div>
         </footer>
+        <script>
+            // Load and display cart when the page loads
+            updateCartDisplay();  // This ensures the cart is populated on load
+        </script>
     </body>
 </html>

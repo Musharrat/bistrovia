@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta http-equiv="X-UV-Compatible" content="IE-edge">
+        <title>Shopping Cart</title>
+        <!-- RESOURCES FILES-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="resources/js/script.js"></script>
+    </head>
+    
+    <body>
+        <header class="top-head">
+            <div class="row">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="resources/img/logo.png"></a>
+                </div>
+                <div class="icon-cart">
+                    <a href="cart.html"><img src="resources/img/cart.png"><span id="cart-count">0</span></a>
+                </div>
+                <div class="top-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <div class="clear-element"></div>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                <div class="topnav">
+                    <div id="myLinks" class="ham-menu">
+                        
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="clear-element"></div>
+            </div>
+            
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        
+        <div class="row">
+            <h2>Shopping Cart</h2>
+            <div class="cart-page">
+                <ul id="cart-item">
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <button onclick="emptyCart()" id="empty-cart-btn">Empty Cart</button>
+        <script>
+            // Load and display cart when the page loads
+            updateCartDisplay();  // This ensures the cart is populated on load
+        </script>
+    </body>
+</html>
